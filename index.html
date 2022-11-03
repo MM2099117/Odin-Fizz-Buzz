@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to."))
+
+        //most for loops start at 0 but fizzbuzz requires starting at 1
+        for (let i = 1; i <= answer; i++){
+
+            //if it divisible with no remainder by both 3 and 5, print FizzBuzz
+            if (i% 3 === 0 && i% 5 === 0) 
+            {
+                console.log("FizzBuzz");
+            }
+            //if divisible by 3 with no remainder, print Fizz
+            else if(i% 3 === 0)
+            {
+                console.log("Fizz");
+            }
+            //if divisible by 5 with no remainder, print Buzz
+            else if (i% 5 === 0)
+            {
+                console.log("Buzz");
+            }
+            //if neither, print the number and continue iterating.
+            else
+            {
+                console.log(i);
+            }
+
+
+        }
+    </script>
+</body>
+</html>
